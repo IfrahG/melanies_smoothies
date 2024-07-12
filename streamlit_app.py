@@ -24,8 +24,8 @@ Ingredients_list = st.multiselect(
 
 #st.write(Ingredients_list)
 #st.text(Ingredients_list)
-if Ingredients_list:    
-ingredients_string=''
+if Ingredients_list:
+    ingredients_string=''
      for fruit_chosen in Ingredients_list:
           ingredients_string+=fruit_chosen+' '
           fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
